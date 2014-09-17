@@ -20,7 +20,7 @@ import org.json.JSONException;
 
 
 public class Plugin extends CordovaPlugin{
-	public static final String ACTION_ADD_CALENDAR_ENTRY = "openDialog";
+	public static final String ACTION_ADD_CALENDAR_ENTRY = "addCalendarEntry";
 
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException{
