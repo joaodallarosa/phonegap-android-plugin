@@ -21,6 +21,6 @@
             </feature>
         </config-file>
  
-        <source-file src="src/android/Plugin.java" target-dir="src/org/4visiontech/plugin" />     
+        <source-file src="src/android/Plugin.java" target-dir="org/4visiontech/plugin" />     
      </platform>         
 </plugin>
