@@ -20,7 +20,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Plugin">
-                <param name="android-package" value="org.4visiontech.plugin.Plugin"/>
+                <param name="android-package" value="org.apache.cordova.plugin.4visiontech.Plugin"/>
             </feature>
         </config-file>
  
