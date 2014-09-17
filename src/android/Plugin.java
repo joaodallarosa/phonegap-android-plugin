@@ -6,7 +6,7 @@ import org.json.JSONException;
 import android.app.Activity;
 import android.content.Intent;
 
-public class Calendar extends CordovaPlugin{
+public class Plugin extends CordovaPlugin{
 	public static final String ACTION_OPEN_DIALOG = "openDialog";
 
 	@Override
