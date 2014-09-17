@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
- 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="org.4visiontech.plugin"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+           id="org.apache.cordova.plugin.4vision"
       version="0.1.0">
-    <name>Plugin</name>
-    <description>Sample PhoneGap Plugin</description>
+    <name>4Vision</name>
+    <description>Cordova RTSP viewer Plugin</description>
     <license>MIT</license>
-    <keywords>phonegap,plugin,4visiontech</keywords>
- 
+    <keywords>cordova,phonegap,rtsp</keywords>
+
     <engines>
       <engine name="cordova" version=">=3.0.0" />
     </engines>    
- 
+
     <js-module src="www/plugin.js" name="Plugin">
         <clobbers target="window.calendar" />
     </js-module>
- 
+
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Plugin">
-                <param name="android-package" value="org.apache.cordova.plugin.4visiontech.Plugin"/>
+                <param name="android-package" value="org.apache.cordova.plugin.4vision.Plugin"/>
             </feature>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.CALENDAR" />
         </config-file>
- 
-        <source-file src="src/android/Plugin.java" target-dir="src/org/apache/cordova/plugin/4visiontech" />     
-     </platform>         
+
+        <source-file src="src/android/Plugin.java" target-dir="src/org/apache/cordova/plugin/4vision" />
+    </platform>     
 </plugin>
