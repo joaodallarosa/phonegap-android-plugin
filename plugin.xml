@@ -1,26 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
- 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="org.4visiontech.plugin"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+           id="org.apache.cordova.plugin.4visiontech"
       version="0.1.0">
-    <name>Plugin</name>
-    <description>Sample PhoneGap Plugin</description>
+    <name>4VisionTech</name>
+    <description>Cordova RTSP viewing Plugin</description>
     <license>MIT</license>
-    <keywords>phonegap,plugin,4visiontech</keywords>
- 
- 
+    <keywords>cordova,phonegap,rtsp,streaming</keywords>
+
+    <engines>
+      <engine name="cordova" version=">=3.0.0" />
+    </engines>    
+
     <js-module src="www/plugin.js" name="Plugin">
         <clobbers target="window.calendar" />
     </js-module>
- 
+
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Plugin">
-                <param name="android-package" value="org.4visiontech.plugin.Plugin"/>
+                <param name="android-package" value="org.apache.cordova.plugin.4visiontech.Plugin"/>
             </feature>
         </config-file>
- 
-        <source-file src="src/android/Plugin.java" target-dir="src/org/4visiontech/plugin" />     
-     </platform>         
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.CALENDAR" />
+        </config-file>
+
+        <source-file src="src/android/Plugin.java" target-dir="src/org/apache/cordova/plugin/4visiontech" />
+    </platform>
+
+    <platform name="wp8">
+        <source-file src="src/wp8/Sms.cs" />
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="Sms">
+                <param name="wp-package" value="Sms" />
+            </feature>
+        </config-file>
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Sms">
+                <param name="ios-package" value="Sms" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/Sms.h" />
+        <source-file src="src/ios/Sms.m" />
+        <framework src="MessageUI.framework" weak="true" />
+    </platform>
 </plugin>
