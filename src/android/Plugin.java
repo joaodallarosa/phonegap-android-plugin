@@ -1,4 +1,4 @@
-package org.apache.cordova.plugin.4vision;
+package org.apache.cordova.plugin.vision;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

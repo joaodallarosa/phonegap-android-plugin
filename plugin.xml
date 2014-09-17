@@ -20,7 +20,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Plugin">
-                <param name="android-package" value="org.apache.cordova.plugin.4vision.Plugin"/>
+                <param name="android-package" value="org.apache.cordova.plugin.vision.Plugin"/>
             </feature>
         </config-file>
 
@@ -28,6 +28,6 @@
             <uses-permission android:name="android.permission.CALENDAR" />
         </config-file>
 
-        <source-file src="src/android/Plugin.java" target-dir="src/org/apache/cordova/plugin/4vision" />
+        <source-file src="src/android/Plugin.java" target-dir="src/org/apache/cordova/plugin/vision" />
     </platform>     
 </plugin>
