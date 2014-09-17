@@ -7,7 +7,7 @@ import android.app.Activity;
 import android.content.Intent;
 
 public class Plugin extends CordovaPlugin{
-	public static final String ACTION_OPEN_DIALOG = "openDialog";
+	public static final String ACTION_ADD_CALENDAR_ENTRY = "openDialog";
 
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException{
