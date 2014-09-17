@@ -1,4 +1,4 @@
-package org.4visiontech.plugin;
+package 4visiontech.plugin;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
