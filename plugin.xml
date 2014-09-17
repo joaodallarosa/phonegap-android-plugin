@@ -31,7 +31,7 @@
         <source-file src="src/android/Plugin.java" target-dir="src/org/apache/cordova/plugin/4visiontech" />
     </platform>
 
-    <platform name="wp8">
+    <!--<platform name="wp8">
         <source-file src="src/wp8/Sms.cs" />
 
         <config-file target="config.xml" parent="/*">
@@ -41,7 +41,7 @@
         </config-file>
     </platform>
 
-    <!-- ios -->
+    <!-- ios 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="Sms">
@@ -51,5 +51,5 @@
         <header-file src="src/ios/Sms.h" />
         <source-file src="src/ios/Sms.m" />
         <framework src="MessageUI.framework" weak="true" />
-    </platform>
+    </platform>-->
 </plugin>
