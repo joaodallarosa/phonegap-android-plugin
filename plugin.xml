@@ -23,6 +23,10 @@
                 <param name="android-package" value="org.apache.cordova.plugin.4visiontech.Plugin"/>
             </feature>
         </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.CALENDAR" />
+        </config-file>
  
         <source-file src="src/android/Plugin.java" target-dir="src/org/apache/cordova/plugin/4visiontech" />     
      </platform>         
