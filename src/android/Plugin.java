@@ -1,13 +1,21 @@
-package org.apache.cordova.plugin.4visiontech;
- 
+package org.apache.cordova.plugin.4vision;
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
-import org.json.JSONObject;
+import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import android.app.Activity;
-import android.content.Intent;
 
 
 public class Plugin extends CordovaPlugin{
