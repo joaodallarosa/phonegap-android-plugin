@@ -16,11 +16,11 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Calendar">
+            <feature name="Plugin">
                 <param name="android-package" value="org.4visiontech.plugin.Plugin"/>
             </feature>
         </config-file>
  
-        <source-file src="src/android/Plugin.java" target-dir="org/4visiontech/plugin" />     
+        <source-file src="src/android/Plugin.java" target-dir="src/org/4visiontech/plugin" />     
      </platform>         
 </plugin>
